@@ -1,24 +1,26 @@
 const meses = ['Enero', 'Febrero','Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre',
                 'Octubre', 'Noviembre', 'Diciembre'];
 
+const numerosFecha = [];
+let y = 0;
 
 function convertirFecha (fecha) {
-    if (fecha.length !== 10) {
+    if (fecha.length !== 10 || fecha.charAt(2) !== '/' || fecha.charAt(5) !== '/') {
         console.log("Asegurate de ingresar la fecha con el formato dd/mm/aaaa");
         return null;
     }
 
-    if (fecha.charAt(2) !== '/' || fecha.charAt(5) !== '/') {
-        console.log("Recuerda usar '/' para tu fecha");
-        return null;
-    }
-    
-    for (let i = 0; i < 10; i++) {
+    for (i = 0; i < 10; i++) {
         if (fecha.charAt(i) !== '/') {
-            if (fecha.charAt(i) < '0' || fecha.charAt(i) > '9') {
-                console.log("Solo puedes ingresar numeros, no letras.");
-                return null;
-            }
+            numerosFecha[y] = fecha.charAt(i);
+            y++;
+        }
+    }
+
+    for (i = 0; i < numerosFecha.length; i ++) {
+        if (numerosFecha[i] < '0' || numerosFecha[i] > '9') {
+            console.log("No se admiten letras dentro de la fecha");
+            return null;
         }
     }
 
