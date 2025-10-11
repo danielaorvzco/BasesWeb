@@ -1,0 +1,182 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 280px;
+    background-color: #D4DA82;
+}
+
+.book-img {
+    width: 100%;
+}
+
+.opciones-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between
+}
+
+.opciones-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.opciones-cuenta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.logo-icon {
+    opacity: 60%;
+    width: 60px;
+    padding-left: 10px;
+}
+
+.icono {
+    opacity: 60%;
+    width: 35px;
+}
+
+.livre-header {
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.opciones-text {
+    font-family: "Comme", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font: 25px;
+}
+
+.dividor {
+    margin-left: 5px; 
+    border-left: 1px solid gray; /* grosor y color de la línea */
+    height: 40px;  
+}
+
+h1 {
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: 10px;
+    color: #D4DA82;
+    text-align: center;
+}
+
+.msg-bienvenida {
+    font-family: "Comme", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav {
+    color:black;
+    opacity: 50%;
+    text-decoration: underline;
+    font-family: "Comme", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #D4DA82;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-nav {
+    padding: 10px;
+}
+
+.buscar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buscar-menu {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.buscador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.caja-buscar {
+    background-color: #D4DA82;
+    padding: 10px;
+}
+
+.logo-menu {
+    width: 40px;
+}
+
+.logo-lupa {
+    width: 20px;
+}
+
+.buscar-text {
+    font-family: "Comme", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.buscar-texto {
+    font-family: "Comme", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: gray;
+}
+
+.selecion-festividad {
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+}

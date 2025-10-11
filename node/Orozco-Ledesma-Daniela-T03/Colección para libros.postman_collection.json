@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "cf4c89f0-b73f-430f-bdbf-e440903fbfeb",
+		"name": "Colección para libros",
+		"description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48846040",
+		"_collection_link": "https://daniela-orozco5169-5774478.postman.co/workspace/DANIELA-OROZCO-LEDESMA's-Worksp~a6074df9-b641-40bc-8fc7-f3b43e1bfbf5/collection/48846040-cf4c89f0-b73f-430f-bdbf-e440903fbfeb?action=share&source=collection_link&creator=48846040"
+	},
+	"item": [
+		{
+			"name": "Página principal",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Página libros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/libros",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"libros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Libro por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/libros/2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"libros",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Postear nuevo libro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "titulo",
+							"value": "Mejor que en las peliculas",
+							"type": "text"
+						},
+						{
+							"key": "autor",
+							"value": "Lynn Painter",
+							"type": "text"
+						},
+						{
+							"key": "sinopsis",
+							"value": "Liz Buxbaum siempre ha sabido que su vecino, Wes Bennett, no tiene madera de novio. Podría parecer que es el candidato perfecto para sus fantasías románticas, pero lo cierto es que Wes solo ha demostrado ser un autentico incordio desde que eran pequeños.",
+							"type": "text"
+						},
+						{
+							"key": "genero",
+							"value": "Romance",
+							"type": "text"
+						},
+						{
+							"key": "editorial",
+							"value": "Puck",
+							"type": "text"
+						},
+						{
+							"key": "isbn",
+							"value": "9786077486947",
+							"type": "text"
+						},
+						{
+							"key": "yearPublicacion",
+							"value": "2023",
+							"type": "text"
+						},
+						{
+							"key": "usuario",
+							"value": "Lorena R",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/libros",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"libros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Usuario que dio alta",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "usuario",
+							"value": "Lorena Rivera",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/libros/4",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"libros",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar libro",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/libros/4",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"libros",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

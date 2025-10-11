@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "dd3707ff-0457-401b-b205-76fcb56ae418",
+		"name": "Orozco-Ledesma-Daniela-T05",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48846040",
+		"_collection_link": "https://daniela-orozco5169-5774478.postman.co/workspace/DANIELA-OROZCO-LEDESMA's-Worksp~a6074df9-b641-40bc-8fc7-f3b43e1bfbf5/collection/48846040-dd3707ff-0457-401b-b205-76fcb56ae418?action=share&source=collection_link&creator=48846040"
+	},
+	"item": [
+		{
+			"name": "Página principal",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Postear nuevo libro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\" : \"Mujercitas\",\r\n    \"autor\" : \"Louisa May Alcott\",\r\n    \"sinopsis\": \"El señor March se ha marchado a la guerra y sus cuatro hijas deben quedarse en casa con su madre, su tía y sus amigos, en medio del bullicio de la vida burguesa de Nueva Inglaterra. Meg, Beth, Amy y Jo, las cuatro hermanas March, tienen intereses muy distintos, pero juntas viven y sufren los cambios que conlleva hacerse un lugar en el mundo y, lo más complicado de todo, crecer.\",\r\n    \"genero\" : \"Clásico\",\r\n    \"editorial\" : \"Penguin\",\r\n    \"isbn\" : 9786078678181,\r\n    \"yearPublicacion\" : 1868,\r\n    \"usuario\" : \"Daniela Orozco\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/libroinfo",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"libroinfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Postear segundo libro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\" : \"1984\",\r\n    \"autor\" : \"George Orwell\",\r\n    \"sinopsis\" : \"En un mundo donde el gobierno lo controla todo, incluso lo que piensas, vive Winston Smith. Trabaja modificando noticias antiguas para que siempre digan lo que el Partido quiere. Pero Winston empieza a sospechar que algo no encaja. ¿Y si todo lo que le han contado es una gran mentira? Mientras la gente repite lo que dice el Gran Hermano y tiene miedo de pensar por sí misma, Winston decide buscar la verdad.\",\r\n    \"genero\" : \"Clásico\",\r\n    \"editorial\" : \"Penguin\",\r\n    \"isbn\" : 9780141036144,\r\n    \"yearPublicacion\" : 1949,\r\n    \"usuario\" : \"Lorena Rivera\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/libroinfo",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"libroinfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Postear tercer libro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\" : \"Mis días en la librería Morisaki\",\r\n    \"autor\" : \"Satoshi Yagisawa\",\r\n    \"sinopsis\" : \"Jinbocho, Tokio El barrio de las librerías y de las editoriales, paraíso de los lectores. Un rincón tranquilo y ajeno al tiempo, a pocos pasos del metro y de grandes edificios modernos. Filas y filas de escaparates llenos de libros, nuevos o de segunda mano. Takako, con veinticinco años y una vida bastante descolorida, no suele frecuentar ese barrio. Sin embargo, es allí donde se encuentra con la librería Morisaki, que ha pertenecido a su familia durante tres generaciones.\",\r\n    \"genero\" : \"Litertura Moderna\",\r\n    \"editorial\" : \"Letras de plata\",\r\n    \"isbn\" : 9786077486046,\r\n    \"yearPublicacion\" : 2023,\r\n    \"usuario\" : \"Ivanna Aviña\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/libroinfo",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"libroinfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener todos los libros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/libroinfo",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"libroinfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener libro por ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\" : \"Mis días en la librería Morisaki\",\r\n    \"autor\" : \"Satoshi Yagisawa\",\r\n    \"sinopsis\" : \"Jinbocho, Tokio El barrio de las librerías y de las editoriales, paraíso de los lectores. Un rincón tranquilo y ajeno al tiempo, a pocos pasos del metro y de grandes edificios modernos. Filas y filas de escaparates llenos de libros, nuevos o de segunda mano. Takako, con veinticinco años y una vida bastante descolorida, no suele frecuentar ese barrio. Sin embargo, es allí donde se encuentra con la librería Morisaki, que ha pertenecido a su familia durante tres generaciones.\",\r\n    \"genero\" : \"Litertura Moderna\",\r\n    \"editorial\" : \"Letras de plata\",\r\n    \"isbn\" : 9786077486046,\r\n    \"yearPublicacion\" : 2023,\r\n    \"usuario\" : \"Ivanna Aviña\"\r\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/libroinfo/68eaab82a1d680fdd48559b4",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"libroinfo",
+						"68eaab82a1d680fdd48559b4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar libro",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"autor\": \"Luis Miguel\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/libroinfo/68eaab82a1d680fdd48559b4",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"libroinfo",
+						"68eaab82a1d680fdd48559b4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar libro",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"autor\": \"Luis Miguel\"\r\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/libroinfo/68eaab82a1d680fdd48559b4",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"libroinfo",
+						"68eaab82a1d680fdd48559b4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
